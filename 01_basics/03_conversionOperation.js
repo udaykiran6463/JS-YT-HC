@@ -14,3 +14,15 @@ console.log(typeof valueInNumeber, valueInNumeber)
 
 console.log(String(false))
 console.log(String(true))
+
+
+let value = 3;
+let negValue = -value;
+console.log(negValue)
+
+console.log("1"+"2");
+console.log("1"+2);
+console.log(1+"2");
+
+console.log("1"+2 + 2);
+console.log(1+ 2 + "2");
