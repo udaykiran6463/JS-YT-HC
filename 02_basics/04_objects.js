@@ -38,3 +38,13 @@ const obj3 = {...obj1, ...obj2}
 console.log(obj3)
 
 
+
+const course = {
+    courseName: "JS in Hindi",
+    price: 1000,
+    courseInstructor:"Hitesh"
+}
+const {courseInstructor} = course  //extract courseInstructor 
+const {courseInstructor: instructor} = course  //extract courseInstructor into instructor
+console.log(courseInstructor)//Hitesh
+console.log(instructor) //Hitesh
