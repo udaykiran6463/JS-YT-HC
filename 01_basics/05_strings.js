@@ -1,10 +1,14 @@
 const firstName = "uday-uk"
 const lastName = "Kiran"
+
+// old way
 // console.log(firstName + " " + lastName);
+// new way - string interpolation
 // console.log(`${firstName} ${lastName}`)
 
 
 // console.log(firstName[0])
+// 
 // console.log(firstName.__proto__)
 
 // console.log(firstName.length)

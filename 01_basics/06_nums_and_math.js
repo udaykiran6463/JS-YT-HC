@@ -19,6 +19,7 @@ console.log(score.toFixed(0));
 console.log("-----------------------------------");
 
 const otherNumber = 148.45
+console.log("topresion");
 console.log(otherNumber.toPrecision(2));
 
 
