@@ -10,12 +10,13 @@ console.log(typeof myDate);
 // let myCreatedDate = new Date("2024-12-22");
 let myCreatedDate = new Date("12-22-2001");
 // let myCreatedDate = new Date("22-12-2001");
-console.log(myCreatedDate);
+console.log("created date object" + myCreatedDate);
 console.log(myCreatedDate.toString());
 
 let myTimeStamp = Date.now();
-console.log(myTimeStamp);   
+console.log("date.now()" + myTimeStamp);   
 console.log(myCreatedDate.getTime());
+// to convert the time in secondes as these are in milliseconds so we divide by 1000 to convert to seconds
 console.log(Math.round(Date.now()/1000))
 
 const days = {
