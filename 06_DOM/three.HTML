@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code - childNodes</title> 
+    <style>
+        #body {
+            background-color: #323233;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body id="body">
+    
+</body>
+<script>
+    const uday = document.createElement('uday')
+    console.log(uday) 
+    console.log(uday.outerHTML)
+    uday.id = "udayElement"
+    uday.setAttribute('lastName','Pillalamarri')
+    uday.style.color = "red"
+    uday.innerHTML = "<h1>UDAY KIRAN</h1>"
+    console.log(uday.outerHTML);
+    document.body.appendChild(uday)
+</script>
+</html>

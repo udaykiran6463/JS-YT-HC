@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit and remove elemnts in the DOM</title>
+    <style>
+        #body{
+            background-color:#212121;
+            color:white;
+        }
+    </style>
+</head>
+<body id="body">
+    <ul class="languages">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addEleLang(lang){
+        const parentLang = document.querySelector(".languages")
+        const newEle = document.createElement('li')
+        newEle.innerText = `${lang}`
+        parentLang.appendChild(newEle)
+    }
+
+    function addEleLangOpti(lang){
+        const newEle = document.createElement('li')
+        newEle.appendChild(document.createTextNode(lang))
+        document.querySelector('.languages').appendChild(newEle)
+    }
+    addEleLangOpti("cpp")
+    addEleLangOpti("java")
+    addEleLangOpti("c")
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo"
+    const newLi = document.createElement("li")
+    newLi.textContent = "mojo"
+    secondLang.replaceWith(newLi)
+    console.log(newLi.nextSibling.outerHTML);
+    console.log(newLi.parentElement);
+    newLi.replaceChild(document.createTextNode("mojo2"))
+</script>
+</html>
