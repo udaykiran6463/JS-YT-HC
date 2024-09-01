@@ -26,3 +26,28 @@ blocks.forEach(block => {
         heading.style.textShadow = "0 0 2px white, 0 0 2px white, 0 2px 2px white, 0 -2px 2px black, 2px 0 2px white, -2px 0 2px white, 2px 2px 2px white, -2px -2px 2px white";
     });
 });
+
+
+var animateButton = function (e) {
+
+    e.preventDefault;
+    //reset animation
+    e.target.classList.remove('animate');
+
+    e.target.classList.add('animate');
+    setTimeout(function () {
+        e.target.classList.remove('animate');
+    }, 700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+    bubblyButtons[i].addEventListener('click', animateButton, false);
+}
+
+document.querySelector('.btn').addEventListener('click', function() {
+    setTimeout(function() {
+        window.location.href = '../index.html';
+    }, 250);
+});
